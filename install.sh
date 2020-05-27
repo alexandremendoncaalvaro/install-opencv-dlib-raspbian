@@ -15,5 +15,3 @@ fi
 cd ~/opencv/opencv-$OPENCV_VERSION/build
 
 sudo make install
-
-~/install-opencv-dlib-raspbian/finish.sh

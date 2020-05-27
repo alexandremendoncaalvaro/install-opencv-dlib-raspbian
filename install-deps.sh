@@ -1,10 +1,7 @@
 #!/bin/bash
 set -ex
 
-sudo apt-get update
-sudo apt-get upgrade
-
-sudo apt-get purge wolfram-engine
+sudo apt-get purge -y wolfram-engine
 sudo apt-get purge -y libreoffice*
 sudo apt-get clean
 sudo apt-get update
