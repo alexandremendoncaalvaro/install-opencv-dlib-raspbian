@@ -1,7 +1,8 @@
 # Install
 
 ## Requirements
-* Raspberry Pi 3 or 4 (Raspbian Buster)
+* Raspberry Pi 3 or above
+* Raspbian Buster or above
 * Don´t loose any step!
 
 ## Compile OpenCV on Raspbian
@@ -18,6 +19,8 @@ chmod +x ~/install-opencv-dlib-raspbian/*.sh
 ```bash
 ~/install-opencv-dlib-raspbian/swapfile.sh
 ```
+
+## Preparing the system
 
 ```bash
 sudo raspi-config
