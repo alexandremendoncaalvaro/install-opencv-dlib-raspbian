@@ -1,4 +1,8 @@
-# Install
+# Almost easy OpenCV and Dlib install for Raspberry Pi
+
+Simplify a lot the process of compiling and install OpenCV and Dlib on Raspberry Pi 3 or above.
+
+I tried some diferent version (of Hardware and Software) with success, but I´m not cover all, so.. please feel free to PR or tell me.
 
 ## Requirements
 * Raspberry Pi 3 or above
@@ -31,7 +35,7 @@ And then select Advanced Options => Expand filesystem:
 In raspi-config: Go back to the main screen and then select Boot Options => Desktop / CLI => Console Autologin:  
 ![cli login](https://www.pyimagesearch.com/wp-content/uploads/2017/05/raspbian_dlib_install_console_login.jpg)
 
-In raspi-config: Go back to the main screen and select Advanced Options => Memory Split, where you’ll see the 64MB prompt:  
+In raspi-config: Go back to the main screen and select Advanced Options => Memory Split, where you’ll see the 64MB (or other value) prompt:  
 ![memory split](https://www.pyimagesearch.com/wp-content/uploads/2017/05/raspbian_dlib_install_memory_split.jpg)
 
 Update this value to be 16MB and then exit.
@@ -50,7 +54,8 @@ in Raspbian Terminal:
 >It will install OpenCV 4.1.1, for another version just type the number at the end of the command, like:  
 ~/install-opencv-dlib-raspbian/install.sh 4.1.1
 
-*Get some coffee... It´ll take a while, actually hours...
+*Do exercises, take a shower, take a nap... It´ll take a while, actually hours...  
+![pc](readme_images/homer.gif)  
 
 ## Install Dlib on Raspbian
 
@@ -64,8 +69,11 @@ pipenv install && pipenv shell
 pipenv install 'numpy==1.18.4' 'dlib==19.19.0'
 ```
 
->For another versions just change it, or simply don´t specify, like: 
+>For another versions just change it, or simply don´t specify, like:  
 pipenv install numpy dlib
+
+*Get some coffee... It´ll take a while  
+![pc](readme_images/coffee.gif)  
 
 ```bash
 ~/install-opencv-dlib-raspbian/link-virtualenv.sh
@@ -78,7 +86,8 @@ in Raspbian Terminal:
 ```bash
 ~/install-opencv-dlib-raspbian/swapfile.sh 100
 ```
-You can then reset your GPU/RAM split to 64MB as well as update the boot options to boot into the desktop interface versus the command line.
+IMPORTANT: You can then reset your GPU/RAM split as well as update the boot options to boot into the desktop interface versus the command line.  
+Use the process detailed in ["Preparing the system"](#preparing-the-system)
 
 # References
 https://www.pyimagesearch.com/2017/05/01/install-dlib-raspberry-pi/  
