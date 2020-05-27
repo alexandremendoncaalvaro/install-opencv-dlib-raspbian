@@ -50,7 +50,7 @@ in Raspbian Terminal:
 >It will install OpenCV 4.1.1, for another version just type the number at the end of the command, like:  
 ~/install-opencv-dlib-raspbian/install.sh 4.1.1
 
-*Get some coffee... It´ll take a while
+*Get some coffee... It´ll take a while, actually hours...
 
 ## Install Dlib on Raspbian
 

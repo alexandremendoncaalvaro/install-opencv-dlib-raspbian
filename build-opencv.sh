@@ -23,6 +23,13 @@ fi
 # -D OPENCV_EXTRA_EXE_LINKER_FLAGS=-latomic
 # is a fix for https://github.com/opencv/opencv/issues/15192
 
+# Correção para o erro Undefined reference to __atomic_xxx no OPENCV_VERSION=4.1.1
+# https://github.com/opencv/opencv/issues/15278
+if [ $OPENCV_VERSION -eq 4.1.1 ]
+then
+  echo 'list(APPEND OPENCV_LINKER_LIBS -latomic)' >> ~/opencv/opencv-4.1.1/cmake/OpenCVDetectCXXCompiler.cmake
+fi
+
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
       -D CMAKE_INSTALL_PREFIX=/usr/local \
       -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-$OPENCV_VERSION/modules \
