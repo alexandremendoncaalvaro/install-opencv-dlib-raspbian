@@ -54,17 +54,22 @@ in Raspbian Terminal:
 
 ## Install Dlib on Raspbian
 
-Navigate to your project folder in Raspbian Terminal and run:
+IMPORTANT: Navigate to YOUR PROJECT FOLDER in Raspbian Terminal and run:
 
 ```bash
 pipenv install && pipenv shell
 ```
+
 ```bash
 pipenv install 'numpy==1.18.4' 'dlib==19.19.0'
 ```
 
 >For another versions just change it, or simply don´t specify, like: 
 pipenv install numpy dlib
+
+```bash
+~/install-opencv-dlib-raspbian/link-virtualenv.sh
+```
 
 ## Finishing
 
