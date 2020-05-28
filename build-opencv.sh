@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-OPENCV_VERSION=4.1.1
+OPENCV_VERSION=4.3.0
 if [ ! -z "$1" ]
 then
   OPENCV_VERSION=$1
@@ -23,7 +23,7 @@ fi
 # -D OPENCV_EXTRA_EXE_LINKER_FLAGS=-latomic
 # is a fix for https://github.com/opencv/opencv/issues/15192
 
-# Fix Undefined reference to __atomic_xxx at OPENCV_VERSION=4.1.1
+# Fix Undefined reference to __atomic_xxx at OPENCV_VERSION=4.3.0
 # https://github.com/opencv/opencv/issues/15278
 if [ $OPENCV_VERSION -eq 4.1.1 ]
 then

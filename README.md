@@ -51,7 +51,7 @@ in Raspbian Terminal:
 ```bash
 ~/install-opencv-dlib-raspbian/install.sh
 ```
->It will install OpenCV 4.1.1, for another version just type the number at the end of the command, like:  
+>It will install OpenCV 4.3.0, for another version just type the number at the end of the command, like:  
 ~/install-opencv-dlib-raspbian/install.sh 4.1.1
 
 *Do exercises, take a shower, take a nap... It´ll take a while, actually hours...  
@@ -88,6 +88,17 @@ in Raspbian Terminal:
 ```
 IMPORTANT: You can then reset your GPU/RAM split as well as update the boot options to boot into the desktop interface versus the command line.  
 Use the process detailed in ["Preparing the system"](#preparing-the-system)
+
+
+## Testing
+
+in Raspbian Terminal:
+
+```bash
+~/install-opencv-dlib-raspbian/test.sh
+```
+
+>It will test for python 2 and 3 and will open a grayscale window for each test.
 
 # References
 https://www.pyimagesearch.com/2017/05/01/install-dlib-raspberry-pi/  
