@@ -5,9 +5,32 @@ Simplify a lot the process of compiling and install OpenCV and Dlib on Raspberry
 I tried some different versions (of Hardware and Software) with success, but I´m not cover all, so.. please feel free to PR or tell me.
 
 ## Requirements
+
 * Raspberry Pi 3 or above
 * Raspbian Buster or above
 * Don´t lose any step!
+
+## About PIPENV
+
+We´re going to use PIPENV.  
+This great tool brings python virtual environment and package management to another level.  
+
+To know more access: https://github.com/pypa/pipenv
+
+After installation..  
+To run any python file you will need to enable pipenv resources at the terminal.
+
+To enable an installed pipenv enviroment, navigate to the project folder (with Pipfile) and run:
+
+```bash
+pipenv shell
+```
+
+To install new PIP libraries use pipenv instead of pip, like:
+
+```bash
+pipenv install numpy
+```
 
 # EASY INSTALL
 
