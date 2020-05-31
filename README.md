@@ -1,36 +1,58 @@
-# Almost easy OpenCV and Dlib install for Raspberry Pi
+# (Now EASY!) OpenCV and Dlib install for Raspberry Pi
 
 Simplify a lot the process of compiling and install OpenCV and Dlib on Raspberry Pi 3 or above.
 
-I tried some diferent version (of Hardware and Software) with success, but I´m not cover all, so.. please feel free to PR or tell me.
+I tried some different versions (of Hardware and Software) with success, but I´m not cover all, so.. please feel free to PR or tell me.
 
 ## Requirements
 * Raspberry Pi 3 or above
 * Raspbian Buster or above
-* Don´t loose any step!
+* Don´t lose any step!
 
-# ONE LINE COMMAND INSTALL
+# EASY INSTALL
 
-**IMPORTANT: Navigate to YOUR PYTHON PROJECT FOLDER in Raspbian Terminal and run:**
+1) We need to optimize the system to handle the installation properly.  
+**IMPORTANT:**  
+Navigate to YOUR PYTHON PROJECT FOLDER in Raspbian Terminal, then run:
+
+>If you don´t have a project folder, just create a new folder and navigate to this path
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/alexandremendoncaalvaro/install-opencv-dlib-raspbian/master/easy-install.sh)"
 ```
+>In the end it will reboot to command line interface
 
->It will do all installation, even reboot once and continue without interaction until the finish
+2) Run:
+
+```bash
+~/install-opencv-dlib-raspbian/easy-install-after-reboot.sh
+```
+>In the end it will reboot to desktop interface
 
 *Do exercises, take a shower, take a nap... It´ll take a while, actually hours...  
 ![pc](readme_images/homer.gif)  
 
-After reboot the script will run silent. To check if its running use the command:  
+## Testing OpenCV
+
+in Raspbian Terminal:
+
 ```bash
-ps aux | grep *.sh
+~/install-opencv-dlib-raspbian/test-opencv.sh
 ```
 
-If everything happens as supposed to be, you will see a window with a grayscale picture at the end.
-Close it and another one will open. It´s the tests for OpenCV in Python 2 an 3.
+>It will test for python 2 and 3 and will open a grayscale window for each test.
+
+## Testing DLIB
+
+in Raspbian Terminal:
+
+```bash
+~/install-opencv-dlib-raspbian/test-dlib.sh
+```
 
 # STEP BY STEP INSTALL
+
+I recommend to use the [EASY INSTALL](#easy-install), but if you want to change OpenCV or DLIB version and etc.. use this one.
 
 ## Compile OpenCV on Raspbian
 Run each line in Raspbian Terminal:
@@ -113,15 +135,24 @@ IMPORTANT: You can then reset your GPU/RAM split as well as update the boot opti
 Use the process detailed in ["Preparing the system"](#preparing-the-system)
 
 
-## Testing
+## Testing OpenCV
 
 in Raspbian Terminal:
 
 ```bash
-~/install-opencv-dlib-raspbian/test.sh
+~/install-opencv-dlib-raspbian/test-opencv.sh
 ```
 
 >It will test for python 2 and 3 and will open a grayscale window for each test.
+
+
+## Testing DLIB
+
+in Raspbian Terminal:
+
+```bash
+~/install-opencv-dlib-raspbian/test-dlib.sh
+```
 
 # References
 https://www.pyimagesearch.com/2017/05/01/install-dlib-raspberry-pi/  
