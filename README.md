@@ -22,6 +22,11 @@ I tried some diferent version (of Hardware and Software) with success, but I´m 
 *Do exercises, take a shower, take a nap... It´ll take a while, actually hours...  
 ![pc](readme_images/homer.gif)  
 
+After reboot the script will run silent. To check if its running use the command:  
+```bash
+ps aux | grep *.sh
+```
+
 If everything happens as supposed to be, you will see a window with a grayscale picture at the end.
 Close it and another one will open. It´s the tests for OpenCV in Python 2 an 3.
 
