@@ -1,4 +1,14 @@
-#!/bin/bash
+#! /bin/sh
+
+### BEGIN INIT INFO
+# Provides:          easy-install-after-reboot.sh
+# Required-Start:    $all
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: OpenCV Install
+### END INIT INFO
+
 set -e
 
 echo "Preparing OpenCV Install.."
