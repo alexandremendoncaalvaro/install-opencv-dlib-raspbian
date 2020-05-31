@@ -1,4 +1,4 @@
-# (Now EASY!) OpenCV and Dlib install for Raspberry Pi
+# (NOW REALLY EASY!) OpenCV and Dlib install for Raspberry Pi
 
 Simplify a lot the process of compiling and install OpenCV and Dlib on Raspberry Pi 3 or above.
 
