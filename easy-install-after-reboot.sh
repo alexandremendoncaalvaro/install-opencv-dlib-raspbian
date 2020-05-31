@@ -12,7 +12,6 @@ cd $PROJECT_PATH
 
 echo "[INFO] Preparing virtual enviroment.."
 pipenv install
-pipenv shell
 
 echo "[INFO] Linking OpenCV installation to python project virtual enviroment.."
 ~/install-opencv-dlib-raspbian/link-virtualenv.sh
@@ -24,9 +23,6 @@ echo "[INFO] Restoring system parameters.."
 ~/install-opencv-dlib-raspbian/swapfile.sh 100
 sudo raspi-config nonint do_boot_behaviour B4
 sudo raspi-config nonint do_memory_split 128
-
-# echo "[INFO] Removing installation files.."
-# sudo rm -rf ~/install-opencv-dlib-raspbian
 
 echo "[INFO] DONE! rebooting to desktop interface.."
 sudo reboot
