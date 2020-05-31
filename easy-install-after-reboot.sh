@@ -22,8 +22,7 @@ sudo raspi-config nonint do_boot_behaviour B4
 sudo raspi-config nonint do_memory_split 128
 
 echo "Unregistering install script on boot..."
-sudo update-rc.d -f opencv-boot-install.sh remove
-sudo rm -f /etc/init.d/opencv-boot-install.sh
+crontab -r
 
 echo "Testing"
 ~/install-opencv-dlib-raspbian/test.sh
