@@ -1,13 +1,3 @@
-#! /bin/sh
-
-### BEGIN INIT INFO
-# Provides:          easy-install-after-reboot.sh
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-### END INIT INFO
-
 set -e
 
 echo "Preparing OpenCV Install.."
@@ -32,8 +22,8 @@ sudo raspi-config nonint do_boot_behaviour B4
 sudo raspi-config nonint do_memory_split 128
 
 echo "Unregistering install script on boot..."
-sudo update-rc.d -f easy-install-after-reboot.sh remove
-sudo rm -f /etc/init.d/easy-install-after-reboot.sh
+sudo update-rc.d -f opencv-boot-install.sh remove
+sudo rm -f /etc/init.d/opencv-boot-install.sh
 
 echo "Testing"
 ~/install-opencv-dlib-raspbian/test.sh
