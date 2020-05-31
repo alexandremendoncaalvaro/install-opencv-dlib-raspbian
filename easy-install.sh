@@ -7,7 +7,7 @@ echo "Setting current directory as the Python project directory"
 echo $PWD >> ~/install-opencv-dlib-raspbian/current-dir.txt
 
 cd ~/install-opencv-dlib-raspbian
-chmod +x ~/install-opencv-dlib-raspbian/*.sh
+sudo chmod +x ~/install-opencv-dlib-raspbian/*.sh
 
 echo "Prepare to run after reboot..."
 echo $(crontab -l ; echo '@reboot ~/install-opencv-dlib-raspbian/easy-install-after-reboot.sh') | crontab -
