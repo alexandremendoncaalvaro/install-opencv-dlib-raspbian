@@ -9,7 +9,7 @@ p = "shape_predictor_68_face_landmarks.dat"
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(p)
 # load the input image and convert it to grayscale
-image = cv2.imread("example.jpg")
+image = cv2.imread("lenna.jpg")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # detect faces in the grayscale image
 rects = detector(gray, 0)

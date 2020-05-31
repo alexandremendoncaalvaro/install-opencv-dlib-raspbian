@@ -14,8 +14,5 @@ PROJECT_PATH=$(<~/install-opencv-dlib-raspbian/current-dir.txt)
 cd $PROJECT_PATH
 
 echo "[INFO] Prepare PIPENV.."
-pipenv shell
 pipenv install imutils
-
-echo "[INFO] DLIB test!"
-python ~/install-opencv-dlib-raspbian/test-dlib.py
+pipenv shell

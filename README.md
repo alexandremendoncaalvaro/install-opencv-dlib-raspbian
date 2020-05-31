@@ -50,6 +50,12 @@ in Raspbian Terminal:
 ~/install-opencv-dlib-raspbian/test-dlib.sh
 ```
 
+then:
+
+```bash
+cd ~/install-opencv-dlib-raspbian && python ~/install-opencv-dlib-raspbian/test-dlib.py
+```
+
 # STEP BY STEP INSTALL
 
 I recommend to use the [EASY INSTALL](#easy-install), but if you want to change OpenCV or DLIB version and etc.. use this one.
@@ -152,6 +158,12 @@ in Raspbian Terminal:
 
 ```bash
 ~/install-opencv-dlib-raspbian/test-dlib.sh
+```
+
+then:
+
+```bash
+python ~/install-opencv-dlib-raspbian/test-dlib.py
 ```
 
 # References
