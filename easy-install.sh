@@ -10,7 +10,7 @@ cd ~/install-opencv-dlib-raspbian
 sudo chmod +x ~/install-opencv-dlib-raspbian/*.sh
 
 echo "Prepare to run after reboot..."
-echo $(crontab -l ; echo '@reboot ~/install-opencv-dlib-raspbian/easy-install-after-reboot.sh') | crontab -
+echo $(crontab -l ; echo '@reboot ~/install-opencv-dlib-raspbian/easy-install-after-reboot.sh > ~/install-opencv-dlib-raspbian/opencv.log 2>&1') | crontab -
 
 echo "Optimizing system for installation..."
 ~/install-opencv-dlib-raspbian/swapfile.sh
