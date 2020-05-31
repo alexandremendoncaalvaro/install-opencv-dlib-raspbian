@@ -9,6 +9,24 @@ I tried some diferent version (of Hardware and Software) with success, but I´m 
 * Raspbian Buster or above
 * Don´t loose any step!
 
+# ONE LINE COMMAND INSTALL
+
+**IMPORTANT: Navigate to YOUR PYTHON PROJECT FOLDER in Raspbian Terminal and run:**
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/alexandremendoncaalvaro/install-opencv-dlib-raspbian/master/easy-install.sh)"
+```
+
+>It will do all installation, even reboot once and continue without interaction until the finish
+
+*Do exercises, take a shower, take a nap... It´ll take a while, actually hours...  
+![pc](readme_images/homer.gif)  
+
+If everything happens as supposed to be, you will see a window with a grayscale picture at the end.
+Close it and another one will open. It´s the tests for OpenCV in Python 2 an 3.
+
+# STEP BY STEP INSTALL
+
 ## Compile OpenCV on Raspbian
 Run each line in Raspbian Terminal:
 
@@ -59,7 +77,7 @@ in Raspbian Terminal:
 
 ## Install Dlib on Raspbian
 
-IMPORTANT: Navigate to YOUR PROJECT FOLDER in Raspbian Terminal and run:
+IMPORTANT: Navigate to YOUR PYTHON PROJECT FOLDER in Raspbian Terminal and run:
 
 ```bash
 pipenv install && pipenv shell
