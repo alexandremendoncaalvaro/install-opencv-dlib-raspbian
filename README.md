@@ -1,14 +1,14 @@
 # (NOW REALLY EASY!) OpenCV and Dlib install for Raspberry Pi
 
-Simplify a lot the process of compiling and install OpenCV and Dlib on Raspberry Pi 3 or above.
+Simplify a lot the process of compiling and installing OpenCV and Dlib on Raspberry Pi 3 or above.
 
-I tried some different versions (of Hardware and Software) with success, but I´m not cover all, so.. please feel free to PR or tell me.
+I tried some different versions (of Hardware and Software) with success, but did not cover all, so.. please feel free to PR or tell me.
 
 ## Requirements
 
 * Raspberry Pi 3 or above
 * Raspbian Buster or above
-* Don´t lose any step!
+* Don´t lose any steps!
 
 ## About PIPENV
 
@@ -34,7 +34,7 @@ pipenv install numpy
 
 # EASY INSTALL
 
-1) We need to optimize the system to handle the installation properly.  
+1) We need to optimize the system to handle the installation properly.
 **IMPORTANT:**  
 Navigate to YOUR PYTHON PROJECT FOLDER in Raspbian Terminal, then run:
 
@@ -143,7 +143,7 @@ pipenv install && pipenv shell
 pipenv install 'numpy==1.18.4' 'dlib==19.19.0'
 ```
 
->For another versions just change it, or simply don´t specify, like:  
+>For another version just change it, or simply don´t specify, like:
 pipenv install numpy dlib
 
 *Get some coffee... It´ll take a while  
@@ -198,5 +198,5 @@ https://www.youtube.com/watch?v=uF4aDdxBm_M
 https://gist.github.com/chirag773/b4c94b5bb4b2e7fcac0d21680c5d4492  
 https://gist.github.com/willprice/abe456f5f74aa95d7e0bb81d5a710b60  
 
-# Are you a native english speaker?
+# Are you a native English speaker?
 No, I am not. If you find typos, grammar errors or whatever please feel free to PR or tell me.
