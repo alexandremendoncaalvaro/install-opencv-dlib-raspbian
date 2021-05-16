@@ -104,13 +104,13 @@ chmod +x ~/install-opencv-dlib-raspbian/*.sh
 sudo raspi-config
 ```
 And then select Advanced Options => Expand filesystem:  
-![Expand FS](https://www.pyimagesearch.com/wp-content/uploads/2018/08/install-opencv4-rpi-expandfs-768x580.jpg)
+![Expand FS](https://inteligenciadascoisas.com/post/20200528-opencvdlib/01.jpg)
 
 In raspi-config: Go back to the main screen and then select Boot Options => Desktop / CLI => Console Autologin:  
-![cli login](https://www.pyimagesearch.com/wp-content/uploads/2017/05/raspbian_dlib_install_console_login.jpg)
+![cli login](https://inteligenciadascoisas.com/post/20200528-opencvdlib/02.jpg)
 
 In raspi-config: Go back to the main screen and select Advanced Options => Memory Split, where you’ll see the 64MB (or other value) prompt:  
-![memory split](https://www.pyimagesearch.com/wp-content/uploads/2017/05/raspbian_dlib_install_memory_split.jpg)
+![memory split](https://inteligenciadascoisas.com/post/20200528-opencvdlib/03.jpg)
 
 Update this value to be 16MB and then exit.
 
