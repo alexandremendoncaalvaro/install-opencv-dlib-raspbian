@@ -17,7 +17,7 @@ echo "[INFO] Linking OpenCV installation to python project virtual enviroment.."
 ~/install-opencv-dlib-raspbian/link-virtualenv.sh
 
 echo "[INFO] Starting Dlib Install.."
-pipenv install 'numpy==1.18.4' 'dlib==19.19.0'
+pipenv install 'numpy' 'dlib'
 
 echo "[INFO] Restoring system parameters.."
 ~/install-opencv-dlib-raspbian/swapfile.sh 100
