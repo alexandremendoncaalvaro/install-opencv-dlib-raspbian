@@ -2,7 +2,7 @@
 set -ex
 
 echo "[INFO] Downloading script files.."
-# git clone https://github.com/alexandremendoncaalvaro/install-opencv-dlib-raspbian.git ~/install-opencv-dlib-raspbian
+git clone https://github.com/alexandremendoncaalvaro/install-opencv-dlib-raspbian.git ~/install-opencv-dlib-raspbian
 
 echo "[INFO] Setting current directory as the Python project directory.."
 echo $PWD >> ~/install-opencv-dlib-raspbian/current-dir.txt
